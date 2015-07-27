@@ -10,12 +10,12 @@ public class ProductsComposer extends SelectorComposer<Component> {
 
 	private static final long serialVersionUID = -1601726398362329019L;
 
-	@Listen("onClick = home")
+	@Listen("onClick = #home")
 	public void home() {
 		Executions.sendRedirect("/home.zul");
 	}
 
-	@Listen("onClick = logout")
+	@Listen("onClick = #logout")
 	public void logout() {
 		Executions.sendRedirect("/home.zul");
 		SecurityUtils.getSubject().logout();

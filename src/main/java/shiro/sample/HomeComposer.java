@@ -6,6 +6,7 @@ package shiro.sample;
 import org.apache.shiro.SecurityUtils;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.SelectorComposer;
+import org.zkoss.zk.ui.select.annotation.Wire;
 import org.zkoss.zul.Label;
 
 /**
@@ -16,6 +17,7 @@ public class HomeComposer extends SelectorComposer<Component> {
 
 	private static final long serialVersionUID = -7750590438470847702L;
 
+	@Wire
 	private Label user;
 
 	public void doAfterCompose(Component comp) throws Exception {
