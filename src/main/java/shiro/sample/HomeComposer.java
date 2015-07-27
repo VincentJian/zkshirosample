@@ -23,7 +23,7 @@ public class HomeComposer extends SelectorComposer<Component> {
 	public void doAfterCompose(Component comp) throws Exception {
 		super.doAfterCompose(comp);
 		if (SecurityUtils.getSubject().isRemembered()) {
-			user.setValue("Welcome: " + SecurityUtils.getSubject().getPrincipal());
+			user.setValue("Welcome Back: " + SecurityUtils.getSubject().getPrincipal() + ", you need to login again to access protected page.");
 		} else {
 			user.setValue("");
 		}

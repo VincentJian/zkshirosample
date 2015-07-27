@@ -13,10 +13,10 @@
 			<grid>
 				<rows>
 					<row>
-						User: <textbox id="u" name="user" />
+						User: <textbox id="u" name="user" hflex="1" />
 					</row>
 					<row>
-						Password: <textbox id="p" type="password" name="pass" />
+						Password: <textbox id="p" type="password" name="pass" hflex="1" />
 					</row>
 					<row>
 						<checkbox id="r" name="remember" /> Remember
