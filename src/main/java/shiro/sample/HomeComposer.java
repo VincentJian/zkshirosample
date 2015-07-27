@@ -22,7 +22,7 @@ public class HomeComposer extends SelectorComposer<Component> {
 
 	public void doAfterCompose(Component comp) throws Exception {
 		super.doAfterCompose(comp);
-		if(SecurityUtils.getSubject().isAuthenticated()) {
+		if (SecurityUtils.getSubject().isRemembered()) {
 			user.setValue("Welcome: " + SecurityUtils.getSubject().getPrincipal());
 		} else {
 			user.setValue("");
